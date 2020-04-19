@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GournerCo l Converter Numerical System</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <audio src="musica/micancion.mp3" autoplay="true" loop="true"></audio>
+    <script src="/js/js.js" language="javascript" type="text/javascript"></script>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body >
+<script>
+     function numberFuncBin() {
+    var num = document.getElementById('nbin').value;
+
+    var numd = parseInt(num,2);
+    var numhex=numd.toString(16);
+    var numoc=numd.toString(8);
+
+
+document.getElementById ('mbin').innerHTML = num;
+    document.getElementById ('mdecimal').innerHTML = numd;
+document.getElementById('mhexa').innerHTML = numhex;
+document.getElementById('moctal').innerHTML = numoc;
+    }
+    
+    
+</script>
+    <script> 
+document.onkeydown = function(e) {
+      // keycode for F5 function
+      if (e.keyCode === 123) {
+        alert('F12 Desactivado amigo :D');
+        return false;
+      }
+     };
+</script>
+    <script type="text/javascript">
+document.oncontextmenu = function(){return false;}
+</script>
+    <div class="content-cabecera">
+        <div class="content-logo">
+          <a href="index.html"><img src="https://image.flaticon.com/icons/png/512/13/13964.png"></a>
+        </div>
+        <h1>GournerCo</h1>
+        <p>En esta pagina podrás hacer conversion numerical Sistema, podras interactuar con la herramienta de conversion adaptable y precisa, con solo un click <b>Obtendrás los resultados!</b> </p>
+    </div>
+    
+    <main>
+        <div class="content2">
+            <CENTER><H1>CONVERSION DE BINARIO</H1></CENTER>
+        </BR>
+        <label><H3>Digite el numero Binario a calcular:</H3> </label>
+        </br>
+            </br>
+        <input id="nbin" type="numberFuncBin" ></input>
+    </br>
+                    </br><button id="calcular" onclick="numberFuncBin()" >Calcular</button>    </br>
+    </br>
+    </br>
+            <p><h3>Resultados:</h3></p>
+            </br>
+            </br>
+        <b><p><label >Binario digitado </label></p>
+        </br>
+        <p></p>
+        <p><label id="mbin"><h2></h2></label></p>
+         </br>
+        <p><label >decimal: </label></p>
+        </br>
+        <p><label id="mdecimal"><h2></h2></label></p>
+        </br>
+        <p><label >Hexadecimal: </label></p>
+        </br>
+        <p><label id="mhexa"><h2></h2></label>
+         </br>
+        <p><label >Octal:  </label></p>
+        </br>
+        <p><label id="moctal"><h2></h2></label>
+             <p></p></b>
+    </div>
+    </br>
+        <center><footer>
+        <p>Diseño tomado de: <a href="https://www.youtube.com/channel/UCgY6raSf9MhsMjXwmG83-Bg">Magtimus</a>, Programado por <a href="#">Yorgen Galvis</a> </p></footer></center>
+    </main>
+</body>
+</html>
